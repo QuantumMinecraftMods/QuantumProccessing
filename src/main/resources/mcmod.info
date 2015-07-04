@@ -1,0 +1,21 @@
+[
+{
+  "modid": "qp",
+  "name": "Quantum Processing",
+  "description": "Tech mod that adds more methods of mining and ore processing!",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "bigeebs",
+  ],
+  "credits": "bigeebs",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
