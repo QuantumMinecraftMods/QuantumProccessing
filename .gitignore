@@ -1,0 +1,10 @@
+#Seriously guys, stop commiting this to your git repo!
+.gradle/*
+gradle/*
+eclipse/*
+gradlew
+gradlew.bat
+build/*
+QuantumProccessing.iml
+QuantumProccessing.ipr
+QuantumProccessing.iws
