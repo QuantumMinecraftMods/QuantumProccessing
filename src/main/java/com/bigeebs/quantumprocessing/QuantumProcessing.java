@@ -10,9 +10,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class QuantumProcessing {
 
     //Set the ID of the mod
-    public static final String MODID = "qp";
+    public static final String MODID = "quantumprocessing";
     //Set the "Name" of the Mod
-    public static final String MODNAME = "Quantum Processing";
+    public static final String MODNAME = "QuantumProcessing";
     //Set the version of the mod
     public static final String MODVER = "1.8.0-1.0";
 
@@ -26,7 +26,7 @@ public class QuantumProcessing {
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
+    public void load(FMLInitializationEvent event)
     {
 
     }

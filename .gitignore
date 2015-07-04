@@ -1,13 +1,13 @@
 #Seriously guys, stop commiting this to your git repo!
-
-.gitignore
-
 .gradle/*
 gradle/*
 eclipse/*
 gradlew
 gradlew.bat
 build/*
-QuantumProccessing.iml
-QuantumProccessing.ipr
-QuantumProccessing.iws
+out/
+QuantumProcessing.iml
+QuantumProcessing.ipr
+QuantumProcessing.iws
+quantumProcessing.properties
+quantumProcessing.xml

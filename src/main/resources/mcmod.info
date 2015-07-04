@@ -1,7 +1,7 @@
 [
 {
-  "modid": "qp",
-  "name": "Quantum Processing",
+  "modid": "quantumprocessing",
+  "name": "QuantumProcessing",
   "description": "Tech mod that adds more methods of mining and ore processing!",
   "version": "${mod_version}",
   "mcversion": "${minecraft_version}",
