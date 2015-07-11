@@ -2,9 +2,11 @@ package com.bigeebs.quantumprocessing;
 
 
 import com.bigeebs.quantumprocessing.handler.ConfigurationHandler;
+import com.bigeebs.quantumprocessing.init.ModItems;
 import com.bigeebs.quantumprocessing.proxy.IProxy;
 import com.bigeebs.quantumprocessing.reference.Reference;
 import com.bigeebs.quantumprocessing.utility.LogHelper;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,6 +28,9 @@ public class QuantumProcessing {
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ModItems.init();
+
 
         LogHelper.info("Pre Initialization Complete!!!");
     }
