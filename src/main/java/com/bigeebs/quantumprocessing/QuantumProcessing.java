@@ -21,8 +21,8 @@ public class QuantumProcessing {
     @Mod.Instance(Reference.MOD_ID) //Tell Forge what instance to use
     public static QuantumProcessing instance;
 
-    //@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    //public static IProxy proxy;
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

@@ -1,7 +1,8 @@
 package com.bigeebs.quantumprocessing.init;
 
 import com.bigeebs.quantumprocessing.item.QPItem;
-import com.bigeebs.quantumprocessing.item.T1FissionFurnace;
+import com.bigeebs.quantumprocessing.item.MatterWrench;
+import com.bigeebs.quantumprocessing.names.ItemNames;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
@@ -9,10 +10,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class ModItems {
 
-    public static QPItem t1FissionFurnace = new T1FissionFurnace();
+    public static QPItem Wrench = new MatterWrench();
 
     public static void init() {
 
-        GameRegistry.registerItem(t1FissionFurnace, "fissionFurnace");
+        GameRegistry.registerItem(Wrench, ItemNames.MatterWrench);
     }
 }
