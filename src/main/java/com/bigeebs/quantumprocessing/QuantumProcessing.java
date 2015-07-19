@@ -3,6 +3,7 @@ package com.bigeebs.quantumprocessing;
 
 import com.bigeebs.quantumprocessing.handler.ConfigurationHandler;
 import com.bigeebs.quantumprocessing.init.ModItems;
+import com.bigeebs.quantumprocessing.proxy.CommonProxy;
 import com.bigeebs.quantumprocessing.proxy.IProxy;
 import com.bigeebs.quantumprocessing.reference.Reference;
 import com.bigeebs.quantumprocessing.utility.LogHelper;
@@ -13,8 +14,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import java.sql.Ref;
-
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.MOD_VER, guiFactory = Reference.GUI_FACTORY_CLASS) //Initialize mod
 public class QuantumProcessing {
 
@@ -22,7 +21,7 @@ public class QuantumProcessing {
     public static QuantumProcessing instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -30,14 +29,14 @@ public class QuantumProcessing {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ModItems.init();
-
-
+        ModItems.register();
         LogHelper.info("Pre Initialization Complete!!!");
     }
 
     @Mod.EventHandler
-    public void load(FMLInitializationEvent event)
+    public void init(FMLInitializationEvent event)
     {
+        proxy.registerRenders();
         LogHelper.info("Initialization Complete!!!");
     }
 

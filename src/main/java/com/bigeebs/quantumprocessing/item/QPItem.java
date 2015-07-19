@@ -5,6 +5,7 @@ import com.bigeebs.quantumprocessing.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  * Created by Andrew.Ebert on 7/11/2015.
@@ -14,6 +15,7 @@ public class QPItem extends Item {
     public QPItem() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
+
     }
 
     public String getUnlocalizedName() {

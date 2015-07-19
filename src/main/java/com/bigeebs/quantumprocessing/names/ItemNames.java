@@ -5,5 +5,5 @@ package com.bigeebs.quantumprocessing.names;
  */
 public class ItemNames {
 
-    public static final String MatterWrench = "matterWrench";
+    public static final String MATTER_WRENCH = "matterWrench";
 }

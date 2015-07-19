@@ -3,7 +3,12 @@ package com.bigeebs.quantumprocessing.proxy;
 
 public class CommonProxy implements IProxy {
 
-    CommonProxy() {
+    public CommonProxy() {
+
+    }
+
+    public void registerRenders()
+    {
 
     }
 }
