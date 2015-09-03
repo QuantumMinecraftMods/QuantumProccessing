@@ -21,7 +21,7 @@ import net.minecraftforge.fml.relauncher.Side;
  */
 public class ModItems {
 
-    public static Item Wrench;
+    public static QPItem Wrench;
 
     public static void init()
     {
@@ -38,8 +38,9 @@ public class ModItems {
         registerRender(Wrench);
     }
 
-    public static void registerRender(Item item)
+    public static void registerRender(QPItem item)
     {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + ItemNames.MATTER_WRENCH, "inventory"));
+        LogHelper.info(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getUnwrappedUnlocalizedName(item.getUnlocalizedName()), "inventory"));
     }
 }

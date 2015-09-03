@@ -5,7 +5,12 @@ package com.bigeebs.quantumprocessing.names;
  */
 public class BlockNames {
 
-    public static final String FissionFurnace = "fissionFurnace";
-    public static final String HyperFissionFurnace = "hyperFissionFurnace";
-    public static final String QuantumFissionFurnace = "quantumFissionFurnace";
+
+    //Machine Blocks
+    public static final String FissionFurnaceT1 = "fissionFurnaceT1";
+
+
+
+    //World Gen Blocks
+    public static final String AluminumOre = "aluminumOre";
 }

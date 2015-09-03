@@ -10,20 +10,22 @@ public class QPBlock extends Block {
     public QPBlock(Material material) {
         super(material);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-
     }
 
-    public String getUnlocalizedName() {
-        return String.format("block.%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    public QPBlock()
+    {
+        super(Material.rock);
+        this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 
-    public String getUnlocalizedName(Block block) {
-        return String.format("block.%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    @Override
+    public String getUnlocalizedName()
+    {
+        return String.format("tile.%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     public String getUnwrappedUnlocalizedName(String unlocalizedName) {
 
-        return unlocalizedName.substring(unlocalizedName.indexOf(".")+1);
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-
 }

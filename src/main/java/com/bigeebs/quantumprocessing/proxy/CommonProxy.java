@@ -1,14 +1,5 @@
 package com.bigeebs.quantumprocessing.proxy;
 
 
-public class CommonProxy implements IProxy {
-
-    public CommonProxy() {
-
-    }
-
-    public void registerRenders()
-    {
-
-    }
+public abstract class CommonProxy implements IProxy {
 }

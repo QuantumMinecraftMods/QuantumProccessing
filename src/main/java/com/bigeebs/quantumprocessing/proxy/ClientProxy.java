@@ -1,6 +1,9 @@
 package com.bigeebs.quantumprocessing.proxy;
 
+import com.bigeebs.quantumprocessing.client.settings.Keybindings;
+import com.bigeebs.quantumprocessing.init.ModBlocks;
 import com.bigeebs.quantumprocessing.init.ModItems;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 
 /**
  * Created by bigee_000 on 7/3/2015.
@@ -8,12 +11,20 @@ import com.bigeebs.quantumprocessing.init.ModItems;
 public class ClientProxy extends CommonProxy {
 
     public ClientProxy() {
-        super();
+
     }
 
     @Override
     public void registerRenders()
     {
         ModItems.registerRenders();
+        ModBlocks.registerRenders();
+    }
+
+    @Override
+    public void registerKeyBindings() {
+        //Register any keybindings
+        ClientRegistry.registerKeyBinding(Keybindings.charge);
+        ClientRegistry.registerKeyBinding(Keybindings.release);
     }
 }

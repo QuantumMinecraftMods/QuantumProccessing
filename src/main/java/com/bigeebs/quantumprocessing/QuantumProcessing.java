@@ -2,7 +2,9 @@ package com.bigeebs.quantumprocessing;
 
 
 import com.bigeebs.quantumprocessing.handler.ConfigurationHandler;
+import com.bigeebs.quantumprocessing.init.ModBlocks;
 import com.bigeebs.quantumprocessing.init.ModItems;
+import com.bigeebs.quantumprocessing.init.Recipes;
 import com.bigeebs.quantumprocessing.proxy.CommonProxy;
 import com.bigeebs.quantumprocessing.proxy.IProxy;
 import com.bigeebs.quantumprocessing.reference.Reference;
@@ -28,8 +30,12 @@ public class QuantumProcessing {
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        proxy.registerKeyBindings();
         ModItems.init();
         ModItems.register();
+        ModBlocks.init();
+        ModBlocks.register();
+        Recipes.init();
         LogHelper.info("Pre Initialization Complete!!!");
     }
 
@@ -37,6 +43,7 @@ public class QuantumProcessing {
     public void init(FMLInitializationEvent event)
     {
         proxy.registerRenders();
+
         LogHelper.info("Initialization Complete!!!");
     }
 

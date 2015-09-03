@@ -1,2 +1,20 @@
+# Keys
+keys.quantumprocessing.category=Quantum Processing
+keys.quantumprocessing.charge=Charge
+keys.quantumprocessing.release=Release
+
+
+# Creative Tab
+itemGroup.quantumprocessing=Quantum Processing
+
+
 # Tools
 item.quantumprocessing:matterWrench.name=Matter Wrench
+
+
+# Machines
+
+
+# Ores
+
+
