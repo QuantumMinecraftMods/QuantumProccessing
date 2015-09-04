@@ -43,13 +43,13 @@ public class QuantumProcessing {
     public void init(FMLInitializationEvent event)
     {
         proxy.registerRenders();
-
         LogHelper.info("Initialization Complete!!!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+
         LogHelper.info("Post Initialization Complete!!!");
     }
 }
