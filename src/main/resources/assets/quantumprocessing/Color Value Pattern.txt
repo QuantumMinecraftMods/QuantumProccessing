@@ -1,0 +1,19 @@
+Color Value Pattern
+
+4 - Color
+
+96
+82
+72
+64
+
+7- Color
+
+96
+82
+72
+68
+64
+56
+50
+30

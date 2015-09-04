@@ -16,5 +16,12 @@ item.quantumprocessing:matterWrench.name=Matter Wrench
 
 
 # Ores
-
+tile.quantumprocessing:aluminumOre.name=Aluminum Ore
+tile.quantumprocessing:copperOre.name=Copper Ore
+tile.quantumprocessing:tinOre.name=Tin Ore
+tile.quantumprocessing:leadOre.name=Lead Ore
+tile.quantumprocessing:uraniumOre.name=Uranium Ore
+tile.quantumprocessing:plutoniumOre.name=Plutonium Ore
+tile.quantumprocessing:vibraniumOre.name=Vibranium Ore
+tile.quantumprocessing:adamantiumOre.name=Adamantium Ore
 

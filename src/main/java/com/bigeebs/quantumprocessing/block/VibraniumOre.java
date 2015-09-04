@@ -4,18 +4,16 @@ import com.bigeebs.quantumprocessing.creativeTab.CreativeTab;
 import com.bigeebs.quantumprocessing.names.BlockNames;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumWorldBlockLayer;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Created by Andrew.Ebert on 8/10/2015.
  */
-public class AluminumOre extends QPBlock {
+public class VibraniumOre extends QPBlock {
 
-    public AluminumOre()
+    public VibraniumOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.AluminumOre);
+        this.setUnlocalizedName(BlockNames.VibraniumOre);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 
