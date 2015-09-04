@@ -5,5 +5,19 @@ package com.bigeebs.quantumprocessing.names;
  */
 public class ItemNames {
 
-    public static final String MATTER_WRENCH = "matterWrench";
+    //Tools
+    public static final String MatterWrench = "matterWrench";
+
+    //Dusts
+    public static final String AdamantiumDust = "adamantiumDust";
+    public static final String AluminumDust = "aluminumDust";
+    public static final String CopperDust = "copperDust";
+    public static final String EmeraldDust = "emeraldDust";
+    public static final String DiamondDust = "diamondDust";
+    public static final String EnderDust = "enderDust";
+    public static final String AdamantiumDust = "adamantiumDust";
+    public static final String AdamantiumDust = "adamantiumDust";
+    public static final String AdamantiumDust = "adamantiumDust";
+
+    //Ingots
 }

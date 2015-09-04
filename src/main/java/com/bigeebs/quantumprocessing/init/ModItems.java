@@ -3,17 +3,10 @@ package com.bigeebs.quantumprocessing.init;
 import com.bigeebs.quantumprocessing.item.QPItem;
 import com.bigeebs.quantumprocessing.item.MatterWrench;
 import com.bigeebs.quantumprocessing.names.ItemNames;
-import com.bigeebs.quantumprocessing.reference.Reference;
 import com.bigeebs.quantumprocessing.utility.LogHelper;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemModelMesher;
-import net.minecraft.client.renderer.entity.RenderArrow;
-import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
 
 
 /**
@@ -30,7 +23,7 @@ public class ModItems {
 
     public static void register()
     {
-        GameRegistry.registerItem(Wrench, ItemNames.MATTER_WRENCH);
+        GameRegistry.registerItem(Wrench, ItemNames.MatterWrench);
     }
 
     public static void registerRenders()

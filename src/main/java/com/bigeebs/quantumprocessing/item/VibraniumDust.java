@@ -6,9 +6,9 @@ import com.bigeebs.quantumprocessing.names.ItemNames;
 /**
  * Created by Andrew.Ebert on 7/11/2015.
  */
-public class MatterWrench extends QPItem {
+public class VibraniumDust extends QPItem {
 
-    public MatterWrench() {
+    public VibraniumDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
         this.setUnlocalizedName(ItemNames.MatterWrench);

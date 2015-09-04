@@ -25,3 +25,27 @@ tile.quantumprocessing:plutoniumOre.name=Plutonium Ore
 tile.quantumprocessing:vibraniumOre.name=Vibranium Ore
 tile.quantumprocessing:adamantiumOre.name=Adamantium Ore
 
+# Dusts
+item.quantumprocessing:adamantiumDust.name=Adamantium Dust
+item.quantumprocessing:aluminumDust.name=Aluminum Dust
+item.quantumprocessing:copperDust.name=Copper Dust
+item.quantumprocessing:diamondDust.name=Diamond Dust
+item.quantumprocessing:emeraldDust.name=Emerald Dust
+item.quantumprocessing:enderDust.name=Ender Dust
+item.quantumprocessing:goldDust.name=Gold Dust
+item.quantumprocessing:ironDust.name=Iron Dust
+item.quantumprocessing:leadDust.name=Lead Dust
+item.quantumprocessing:plutoniumDust.name=Plutonium Dust
+item.quantumprocessing:tinDust.name=Tin Dust
+item.quantumprocessing:uraniumDust.name=Uranium Dust
+item.quantumprocessing:vibraniumDust.name=Vibranium Dust
+
+# Ingots
+item.quantumprocessing:aluminumIngot.name=Aluminum Ingot
+item.quantumprocessing:copperIngot.name=Copper Ingot
+item.quantumprocessing:tinIngot.name=Tin Ingot
+item.quantumprocessing:leadIngot.name=Lead Ingot
+item.quantumprocessing:uraniumIngot.name=Uranium Ingot
+item.quantumprocessing:plutoniumIngot.name=Plutonium Ingot
+item.quantumprocessing:vibraniumIngot.name=Vibranium Ingot
+item.quantumprocessing:adamantiumIngot.name=Adamantium Ingot
