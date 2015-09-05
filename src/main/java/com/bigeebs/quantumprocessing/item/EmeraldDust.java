@@ -11,6 +11,6 @@ public class EmeraldDust extends QPItem {
     public EmeraldDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.EMERALD_DUST);
     }
 }
