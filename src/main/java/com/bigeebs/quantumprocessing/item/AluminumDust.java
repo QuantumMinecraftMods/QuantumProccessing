@@ -11,6 +11,6 @@ public class AluminumDust extends QPItem {
     public AluminumDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.ALUMINUM_DUST);
     }
 }

@@ -11,6 +11,6 @@ public class UraniumDust extends QPItem {
     public UraniumDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.URANIUM_DUST);
     }
 }

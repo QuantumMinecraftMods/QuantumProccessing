@@ -11,6 +11,6 @@ public class TinDust extends QPItem {
     public TinDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.TIN_DUST);
     }
 }

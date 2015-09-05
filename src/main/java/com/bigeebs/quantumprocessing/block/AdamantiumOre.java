@@ -13,7 +13,7 @@ public class AdamantiumOre extends QPBlock {
     public AdamantiumOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.AluminumOre);
+        this.setUnlocalizedName(BlockNames.ALUMINUM_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

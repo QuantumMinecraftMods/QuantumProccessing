@@ -11,6 +11,6 @@ public class CopperIngot extends QPItem {
     public CopperIngot() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.COPPER_INGOT);
     }
 }

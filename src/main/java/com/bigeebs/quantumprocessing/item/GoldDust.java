@@ -11,6 +11,6 @@ public class GoldDust extends QPItem {
     public GoldDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.GOLD_DUST);
     }
 }

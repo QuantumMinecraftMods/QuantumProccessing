@@ -11,6 +11,6 @@ public class VibraniumDust extends QPItem {
     public VibraniumDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.VIBRANIUM_DUST);
     }
 }

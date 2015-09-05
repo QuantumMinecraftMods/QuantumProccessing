@@ -11,6 +11,6 @@ public class EnderDust extends QPItem {
     public EnderDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.ENDER_DUST);
     }
 }

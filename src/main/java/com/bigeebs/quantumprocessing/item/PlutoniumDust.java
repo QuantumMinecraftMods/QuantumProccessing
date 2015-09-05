@@ -11,6 +11,6 @@ public class PlutoniumDust extends QPItem {
     public PlutoniumDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.PLUTONIUM_DUST);
     }
 }

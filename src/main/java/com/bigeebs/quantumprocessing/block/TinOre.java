@@ -13,7 +13,7 @@ public class TinOre extends QPBlock {
     public TinOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.TinOre);
+        this.setUnlocalizedName(BlockNames.TIN_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

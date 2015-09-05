@@ -11,6 +11,6 @@ public class UraniumIngot extends QPItem {
     public UraniumIngot() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.URANIUM_INGOT);
     }
 }

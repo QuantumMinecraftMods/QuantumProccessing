@@ -13,7 +13,7 @@ public class VibraniumOre extends QPBlock {
     public VibraniumOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.VibraniumOre);
+        this.setUnlocalizedName(BlockNames.VIBRANIUM_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

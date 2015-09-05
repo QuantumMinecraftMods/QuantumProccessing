@@ -11,6 +11,6 @@ public class AluminumIngot extends QPItem {
     public AluminumIngot() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.ALUMINUM_INGOT);
     }
 }

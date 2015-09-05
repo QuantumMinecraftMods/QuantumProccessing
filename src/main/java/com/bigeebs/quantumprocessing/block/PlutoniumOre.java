@@ -13,7 +13,7 @@ public class PlutoniumOre extends QPBlock {
     public PlutoniumOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.PlutoniumOre);
+        this.setUnlocalizedName(BlockNames.PLUTONIUM_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

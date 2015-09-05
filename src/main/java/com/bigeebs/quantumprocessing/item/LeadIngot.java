@@ -11,6 +11,6 @@ public class LeadIngot extends QPItem {
     public LeadIngot() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.LEAD_INGOT);
     }
 }

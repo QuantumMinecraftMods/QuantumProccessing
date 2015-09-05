@@ -39,14 +39,14 @@ public class ModBlocks {
 
     public static void register()
     {
-        GameRegistry.registerBlock(aluminumOre, BlockNames.AluminumOre);
-        GameRegistry.registerBlock(copperOre, BlockNames.CopperOre);
-        GameRegistry.registerBlock(tinOre, BlockNames.TinOre);
-        GameRegistry.registerBlock(leadOre, BlockNames.LeadOre);
-        GameRegistry.registerBlock(uraniumOre, BlockNames.UraniumOre);
-        GameRegistry.registerBlock(plutoniumOre, BlockNames.PlutoniumOre);
-        GameRegistry.registerBlock(vibraniumOre, BlockNames.VibraniumOre);
-        GameRegistry.registerBlock(adamantiumOre, BlockNames.AdamantiumOre);
+        GameRegistry.registerBlock(aluminumOre, BlockNames.ALUMINUM_ORE);
+        GameRegistry.registerBlock(copperOre, BlockNames.COPPER_ORE);
+        GameRegistry.registerBlock(tinOre, BlockNames.TIN_ORE);
+        GameRegistry.registerBlock(leadOre, BlockNames.LEAD_ORE);
+        GameRegistry.registerBlock(uraniumOre, BlockNames.URANIUM_ORE);
+        GameRegistry.registerBlock(plutoniumOre, BlockNames.PLUTONIUM_ORE);
+        GameRegistry.registerBlock(vibraniumOre, BlockNames.VIBRANIUM_ORE);
+        GameRegistry.registerBlock(adamantiumOre, BlockNames.ADAMANTIUM_ORE);
     }
 
     public static void registerRenders()

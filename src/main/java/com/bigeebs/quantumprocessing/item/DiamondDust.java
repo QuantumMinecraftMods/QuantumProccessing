@@ -11,6 +11,6 @@ public class DiamondDust extends QPItem {
     public DiamondDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.DIAMOND_DUST);
     }
 }

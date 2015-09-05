@@ -11,6 +11,6 @@ public class CopperDust extends QPItem {
     public CopperDust() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.MatterWrench);
+        this.setUnlocalizedName(ItemNames.COPPER_DUST);
     }
 }

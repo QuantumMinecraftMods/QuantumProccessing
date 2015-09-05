@@ -13,7 +13,7 @@ public class UraniumOre extends QPBlock {
     public UraniumOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.UraniumOre);
+        this.setUnlocalizedName(BlockNames.URANIUM_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

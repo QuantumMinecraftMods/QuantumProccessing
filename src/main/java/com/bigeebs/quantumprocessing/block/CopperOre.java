@@ -13,7 +13,7 @@ public class CopperOre extends QPBlock {
     public CopperOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.CopperOre);
+        this.setUnlocalizedName(BlockNames.COPPER_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 

@@ -13,7 +13,7 @@ public class LeadOre extends QPBlock {
     public LeadOre()
     {
         super(Material.iron);
-        this.setUnlocalizedName(BlockNames.LeadOre);
+        this.setUnlocalizedName(BlockNames.LEAD_ORE);
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
     }
 
