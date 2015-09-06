@@ -1,5 +1,7 @@
 package com.bigeebs.quantumprocessing.names;
 
+import scala.io.StdIn;
+
 /**
  * Created by bigee_000 on 7/12/2015.
  */
@@ -7,6 +9,10 @@ public class ItemNames {
 
     //Tools
     public static final String MATTER_WRENCH = "matterWrench";
+
+    //Special Items
+    public static final String PLUTONIUM_CORE = "plutoniumCore";
+    public static final String URANIUM_CORE = "uraniumCore";
 
     //Dusts
     public static final String ADAMANTIUM_DUST = "adamantiumDust";

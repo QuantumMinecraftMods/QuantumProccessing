@@ -17,6 +17,10 @@ public class ModItems {
     //Tools
     public static QPItem matterWrench;
 
+    //Special Items
+    public static QPItem plutoniumCore;
+    public static QPItem uraniumCore;
+
     //Dusts
     public static QPItem adamantiumDust;
     public static QPItem aluminumDust;
@@ -46,6 +50,10 @@ public class ModItems {
     {
         //Tools
         matterWrench = new MatterWrench();
+
+        //Special Items
+        plutoniumCore = new PlutoniumCore();
+        uraniumCore = new UraniumCore();
 
         //Dusts
         adamantiumDust = new AdamantiumDust();
@@ -79,6 +87,10 @@ public class ModItems {
         //Tools
         GameRegistry.registerItem(matterWrench, ItemNames.MATTER_WRENCH);
 
+        //Special Items
+        GameRegistry.registerItem(plutoniumCore, ItemNames.PLUTONIUM_CORE);
+        GameRegistry.registerItem(uraniumCore, ItemNames.URANIUM_CORE);
+
         //Dusts
         GameRegistry.registerItem(adamantiumDust, ItemNames.ADAMANTIUM_DUST);
         GameRegistry.registerItem(aluminumDust, ItemNames.ALUMINUM_DUST);
@@ -109,6 +121,10 @@ public class ModItems {
     {
         //Tools
         registerRender(matterWrench);
+
+        //Special Items
+        registerRender(plutoniumCore);
+        registerRender(uraniumCore);
 
         //Dusts
         registerRender(adamantiumDust);

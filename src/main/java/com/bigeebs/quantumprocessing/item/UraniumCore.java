@@ -6,11 +6,11 @@ import com.bigeebs.quantumprocessing.names.ItemNames;
 /**
  * Created by Andrew.Ebert on 7/11/2015.
  */
-public class EmeraldDust extends QPItem {
+public class UraniumCore extends QPItem {
 
-    public EmeraldDust() {
+    public UraniumCore() {
         super();
         this.setCreativeTab(CreativeTab.QUANTUM_PROCESSING);
-        this.setUnlocalizedName(ItemNames.EMERALD_DUST);
+        this.setUnlocalizedName(ItemNames.URANIUM_CORE);
     }
 }
