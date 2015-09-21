@@ -9,12 +9,14 @@ import com.bigeebs.quantumprocessing.proxy.CommonProxy;
 import com.bigeebs.quantumprocessing.proxy.IProxy;
 import com.bigeebs.quantumprocessing.reference.Reference;
 import com.bigeebs.quantumprocessing.utility.LogHelper;
+import com.bigeebs.quantumprocessing.worldGen.OreGeneration;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.MOD_VER, guiFactory = Reference.GUI_FACTORY_CLASS) //Initialize mod
 public class QuantumProcessing {
@@ -35,7 +37,7 @@ public class QuantumProcessing {
         ModItems.register();
         ModBlocks.init();
         ModBlocks.register();
-        Recipes.init();
+        GameRegistry.registerWorldGenerator(new OreGeneration(), 1);
         LogHelper.info("Pre Initialization Complete!!!");
     }
 
@@ -49,7 +51,9 @@ public class QuantumProcessing {
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        Recipes.initShapedRecipes();
+        Recipes.initShaplessRecipes();
+        Recipes.initSmeltingRecipes();
         LogHelper.info("Post Initialization Complete!!!");
     }
 }

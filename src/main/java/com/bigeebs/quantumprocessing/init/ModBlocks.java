@@ -39,6 +39,7 @@ public class ModBlocks {
 
     public static void register()
     {
+        GameRegistry.registerBlock(adamantiumOre, BlockNames.ADAMANTIUM_ORE);
         GameRegistry.registerBlock(aluminumOre, BlockNames.ALUMINUM_ORE);
         GameRegistry.registerBlock(copperOre, BlockNames.COPPER_ORE);
         GameRegistry.registerBlock(tinOre, BlockNames.TIN_ORE);
@@ -46,11 +47,11 @@ public class ModBlocks {
         GameRegistry.registerBlock(uraniumOre, BlockNames.URANIUM_ORE);
         GameRegistry.registerBlock(plutoniumOre, BlockNames.PLUTONIUM_ORE);
         GameRegistry.registerBlock(vibraniumOre, BlockNames.VIBRANIUM_ORE);
-        GameRegistry.registerBlock(adamantiumOre, BlockNames.ADAMANTIUM_ORE);
     }
 
     public static void registerRenders()
     {
+        registerRender(adamantiumOre);
         registerRender(aluminumOre);
         registerRender(copperOre);
         registerRender(tinOre);
@@ -58,7 +59,6 @@ public class ModBlocks {
         registerRender(uraniumOre);
         registerRender(plutoniumOre);
         registerRender(vibraniumOre);
-        registerRender(adamantiumOre);
     }
 
     public static void registerRender(QPBlock block)
