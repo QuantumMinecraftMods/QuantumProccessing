@@ -29,5 +29,13 @@ public class Recipes {
         GameRegistry.addSmelting(new ItemStack(ModBlocks.plutoniumOre),new ItemStack(ModItems.plutoniumIngot), 0.0F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.vibraniumOre),new ItemStack(ModItems.vibraniumIngot), 0.0F);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.tinOre),new ItemStack(ModItems.tinIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.adamantiumDust),new ItemStack(ModItems.adamantiumIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.aluminumDust),new ItemStack(ModItems.aluminumIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.copperDust),new ItemStack(ModItems.copperIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.leadDust),new ItemStack(ModItems.leadIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.uraniumDust),new ItemStack(ModItems.uraniumIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.plutoniumDust),new ItemStack(ModItems.plutoniumIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.vibraniumDust),new ItemStack(ModItems.vibraniumIngot), 0.0F);
+        GameRegistry.addSmelting(new ItemStack(ModItems.tinDust),new ItemStack(ModItems.tinIngot), 0.0F);
     }
 }

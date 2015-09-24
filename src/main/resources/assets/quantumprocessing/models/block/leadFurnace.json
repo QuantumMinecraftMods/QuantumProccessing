@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "quantumprocessing:blocks/leadFurnaceTop",
+    "front": "quantumprocessing:blocks/leadFurnaceFrontOff",
+    "side": "quantumprocessing:blocks/leadFurnaceSide"
+  }
+}

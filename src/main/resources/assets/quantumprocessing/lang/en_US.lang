@@ -13,6 +13,7 @@ item.quantumprocessing:matterWrench.name=Matter Wrench
 
 
 # Machines
+tile.quantumprocessing:leadFurnace.name=Lead Furnace(tier 1)
 
 
 # Ores

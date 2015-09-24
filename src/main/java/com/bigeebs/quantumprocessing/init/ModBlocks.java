@@ -1,6 +1,7 @@
 package com.bigeebs.quantumprocessing.init;
 
 import com.bigeebs.quantumprocessing.block.*;
+import com.bigeebs.quantumprocessing.block.LeadFurnace.LeadFurnace;
 import com.bigeebs.quantumprocessing.names.BlockNames;
 import com.bigeebs.quantumprocessing.utility.LogHelper;
 import net.minecraft.client.Minecraft;
@@ -23,6 +24,8 @@ public class ModBlocks {
     public static QPBlock plutoniumOre;
     public static QPBlock vibraniumOre;
     public static QPBlock adamantiumOre;
+    public static QPMachineBlock leadFurnace;
+
 
     public static void init()
     {
@@ -34,7 +37,7 @@ public class ModBlocks {
         plutoniumOre = new PlutoniumOre();
         vibraniumOre = new VibraniumOre();
         adamantiumOre = new AdamantiumOre();
-
+        leadFurnace = new LeadFurnace();
     }
 
     public static void register()
@@ -47,6 +50,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(uraniumOre, BlockNames.URANIUM_ORE);
         GameRegistry.registerBlock(plutoniumOre, BlockNames.PLUTONIUM_ORE);
         GameRegistry.registerBlock(vibraniumOre, BlockNames.VIBRANIUM_ORE);
+        GameRegistry.registerBlock(leadFurnace, BlockNames.LEAD_FURNACE);
     }
 
     public static void registerRenders()
@@ -59,6 +63,7 @@ public class ModBlocks {
         registerRender(uraniumOre);
         registerRender(plutoniumOre);
         registerRender(vibraniumOre);
+        registerRender(leadFurnace);
     }
 
     public static void registerRender(QPBlock block)
@@ -68,6 +73,14 @@ public class ModBlocks {
         ModelResourceLocation itemModelLocation = new ModelResourceLocation(block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()), "inventory");
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemBlock, DEFAULT_ITEM_SUBTYPE, itemModelLocation);
 
+    }
+
+    public static void registerRender(QPMachineBlock block)
+    {
+        LogHelper.info(block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()));
+        Item itemBlock = block.getItem(null, null);
+        ModelResourceLocation itemModelLocation = new ModelResourceLocation(block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()), "inventory");
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemBlock, DEFAULT_ITEM_SUBTYPE, itemModelLocation);
     }
 
 

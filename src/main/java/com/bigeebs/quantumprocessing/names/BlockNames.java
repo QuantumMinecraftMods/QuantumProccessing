@@ -5,8 +5,8 @@ public class BlockNames {
 
 
     //Machine Blocks
-    public static final String FISSION_FURNACE_T1 = "fissionFurnaceT1";
-
+    public static final String LEAD_FURNACE = "leadFurnace";
+    public static final String LEAD_FURNACE_ACTIVE = "leadFurnaceActive";
 
 
     //World Gen Blocks

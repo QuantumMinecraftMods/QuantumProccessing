@@ -1,5 +1,8 @@
 {
   "variants": {
-    "normal": { "model": "quantumprocessing:adamantiumOre" }
+    "facing=north": { "model": "quantumprocessing:leadFurnace" },
+    "facing=south": { "model": "quantumprocessing:leadFurnace", "y": 180 },
+    "facing=west":  { "model": "quantumprocessing:leadFurnace", "y": 270 },
+    "facing=east":  { "model": "quantumprocessing:leadFurnace", "y": 90 }
   }
 }
