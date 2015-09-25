@@ -118,6 +118,8 @@ public class LeadFurnace extends QPMachineBlock {
         return 3;
     }
 
+
+
     // getStateFromMeta, getMetaFromState are used to interconvert between the block's property values and
     //   the stored metadata (which must be an integer in the range 0 - 15 inclusive)
     // The property is encode as:
