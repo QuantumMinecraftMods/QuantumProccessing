@@ -13,7 +13,13 @@ item.quantumprocessing:matterWrench.name=Matter Wrench
 
 
 # Machines
-tile.quantumprocessing:leadFurnace.name=Lead Furnace(tier 1)
+tile.quantumprocessing:leadFurnace.name=Lead Furnace
+container.quantumprocessing:leadFurnace.name=Lead Furnace
+
+
+# Materials
+item.quantumprocessing:plutoniumCore.name=Plutonium Core
+item.quantumprocessing:uraniumCore.name=Uranium Core
 
 
 # Ores

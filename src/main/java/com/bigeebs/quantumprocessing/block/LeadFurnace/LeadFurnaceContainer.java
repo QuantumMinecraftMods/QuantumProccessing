@@ -41,27 +41,17 @@ public class LeadFurnaceContainer extends Container {
     {
         this.leadFurnaceTileEntity = tileEntity;
 
-        final int SLOT_X_SPACING = 18;
-        final int SLOT_Y_SPACING = 18;
-        final int HOTBAR_XPOS = 8;
-        final int HOTBAR_YPOS = 109;
-
-        // Add the players hotbar to the gui - the [xpos, ypos] location of each item
-        for (int x = 0; x < HOTBAR_SLOT_COUNT; x++) {
-            int slotNumber = x;
-            addSlotToContainer(new Slot(invPlayer, slotNumber, HOTBAR_XPOS + SLOT_X_SPACING * x, HOTBAR_YPOS));
+        for (int i = 0; i < 3; ++i)
+        {
+            for (int j = 0; j < 9; ++j)
+            {
+                this.addSlotToContainer(new Slot(invPlayer, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+            }
         }
 
-        final int PLAYER_INVENTORY_XPOS = 8;
-        final int PLAYER_INVENTORY_YPOS = 51;
-        // Add the rest of the players inventory to the gui
-        for (int y = 0; y < PLAYER_INVENTORY_ROW_COUNT; y++) {
-            for (int x = 0; x < PLAYER_INVENTORY_COLUMN_COUNT; x++) {
-                int slotNumber = HOTBAR_SLOT_COUNT + y * PLAYER_INVENTORY_COLUMN_COUNT + x;
-                int xpos = PLAYER_INVENTORY_XPOS + x * SLOT_X_SPACING;
-                int ypos = PLAYER_INVENTORY_YPOS + y * SLOT_Y_SPACING;
-                addSlotToContainer(new Slot(invPlayer, slotNumber,  xpos, ypos));
-            }
+        for (int i = 0; i < 9; ++i)
+        {
+            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 142));
         }
 
         if (LEAD_FURNACE_SLOT_COUNT != leadFurnaceTileEntity.getSizeInventory()) {
@@ -69,9 +59,9 @@ public class LeadFurnaceContainer extends Container {
                     + ") and TileInventory (" + leadFurnaceTileEntity.getSizeInventory() + ")");
         }
         addSlotToContainer(new Slot(leadFurnaceTileEntity, 0, 35, 17));
-        addSlotToContainer(new Slot(leadFurnaceTileEntity, 0, 56, 17));
-        addSlotToContainer(new Slot(leadFurnaceTileEntity, 0, 45, 53));
-        addSlotToContainer(new Slot(leadFurnaceTileEntity, 0, 112, 31));
+        addSlotToContainer(new Slot(leadFurnaceTileEntity, 1, 56, 17));
+        addSlotToContainer(new Slot(leadFurnaceTileEntity, 2, 45, 53));
+        addSlotToContainer(new Slot(leadFurnaceTileEntity, 3, 116, 35));
     }
 
     // Vanilla calls this method every tick to make sure the player is still able to access the inventory, and if not closes the gui

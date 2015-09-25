@@ -3,7 +3,6 @@ package com.bigeebs.quantumprocessing.block.LeadFurnace;
 import com.bigeebs.quantumprocessing.QuantumProcessing;
 import com.bigeebs.quantumprocessing.block.QPMachineBlock;
 import com.bigeebs.quantumprocessing.creativeTab.CreativeTab;
-import com.bigeebs.quantumprocessing.handler.GuiHandler;
 import com.bigeebs.quantumprocessing.names.BlockNames;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -48,7 +47,7 @@ public class LeadFurnace extends QPMachineBlock {
         // open on the server side only  (not sure why you shouldn't open client side too... vanilla doesn't, so we better not either)
         if (worldIn.isRemote) return true;
 
-        playerIn.openGui(QuantumProcessing.instance, GuiHandler.getGuiID(), worldIn, pos.getX(), pos.getY(), pos.getZ());
+        playerIn.openGui(QuantumProcessing.instance, LeadFurnaceGuiHandler.getGuiID(), worldIn, pos.getX(), pos.getY(), pos.getZ());
         return true;
     }
 

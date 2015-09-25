@@ -4,6 +4,7 @@ package com.bigeebs.quantumprocessing;
 import com.bigeebs.quantumprocessing.handler.ConfigurationHandler;
 import com.bigeebs.quantumprocessing.init.ModBlocks;
 import com.bigeebs.quantumprocessing.init.ModItems;
+import com.bigeebs.quantumprocessing.init.ModOther;
 import com.bigeebs.quantumprocessing.init.Recipes;
 import com.bigeebs.quantumprocessing.proxy.CommonProxy;
 import com.bigeebs.quantumprocessing.proxy.IProxy;
@@ -37,7 +38,7 @@ public class QuantumProcessing {
         ModItems.register();
         ModBlocks.init();
         ModBlocks.register();
-        GameRegistry.registerWorldGenerator(new OreGeneration(), 1);
+        ModOther.init();
         LogHelper.info("Pre Initialization Complete!!!");
     }
 

@@ -1,4 +1,4 @@
-package com.bigeebs.quantumprocessing.handler;
+package com.bigeebs.quantumprocessing.block.LeadFurnace;
 
 import com.bigeebs.quantumprocessing.block.LeadFurnace.LeadFurnaceContainer;
 import com.bigeebs.quantumprocessing.block.LeadFurnace.LeadFurnaceGUI;
@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.network.IGuiHandler;
 /**
  * Created by Andrew.Ebert on 9/23/2015.
  */
-public class GuiHandler implements IGuiHandler {
+public class LeadFurnaceGuiHandler implements IGuiHandler {
     private static final int GUIID_QP_ID = 31;
     public static int getGuiID() {return GUIID_QP_ID;}
 

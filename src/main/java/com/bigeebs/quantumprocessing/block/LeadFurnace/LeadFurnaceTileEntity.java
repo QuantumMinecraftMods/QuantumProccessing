@@ -176,7 +176,7 @@ public class LeadFurnaceTileEntity  extends TileEntity implements IInventory {
     // will add a key for this container to the lang file so we can name it in the GUI
     @Override
     public String getName() {
-        return "container.leadFurnace.name";
+        return "container.quantumprocessing:leadFurnace.name";
     }
 
     // standard code to look up what the human-readable name is
